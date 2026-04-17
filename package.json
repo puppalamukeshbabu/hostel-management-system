@@ -1,0 +1,22 @@
+{
+  "name": "hostel-ms",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hostel Management System - Full Stack",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "server": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "setup": "npm run install-all && npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
