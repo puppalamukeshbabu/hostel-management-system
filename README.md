@@ -1,8 +1,10 @@
-# Hostel Management System# HostelMS Pro — Smart College Hostel Management System
+# Hostel Management System
 
+**Full-stack hostel management application** built with React, Express.js, and MongoDB.
 
-
-A full-stack hostel management application built with React, Express.js, and MongoDB.## Features
+🚀 **Live:** https://hostel-management-system-c9ke.onrender.com  
+💾 **Database:** MongoDB Atlas (Compass)  
+🏠 **Deployed on:** Render.com## Features
 
 - 3 Role Logins: Admin, Staff, Student
 
@@ -117,16 +119,25 @@ npm start             # Production server
 npm run setup         # Install + Build (for deployment)
 ```
 
-## 🌐 Deploy on Render
+## 🌐 Deployment
 
-1. Create MongoDB Atlas database at https://www.mongodb.com/cloud/atlas
-2. Push to GitHub
-3. Go to https://render.com → New Web Service
-4. Connect GitHub repo
-5. Set environment variable: `MONGODB_URI=<your_atlas_connection_string>`
-6. Deploy!
+### Live Project
+✅ **Frontend & Backend deployed on Render**  
+✅ **Database: MongoDB Atlas (Compass)**  
+🔗 **Live Link:** https://hostel-management-system-c9ke.onrender.com
 
-Your app will be live at: `https://your-app.onrender.com`
+### Deployment Architecture
+- **Frontend:** React + Vite (served by Render)
+- **Backend:** Express.js API (running on Render)
+- **Database:** MongoDB Atlas Cloud (Compass)
+- **Platform:** Render.com
+
+### How it's deployed:
+1. Frontend React app built to `frontend/dist/`
+2. Backend Express server serves frontend in production
+3. All API calls routed to `/api/*`
+4. MongoDB Atlas stores all data in cloud
+5. Single Render web service handles both frontend & backend
 
 ## 👥 Demo Credentials
 
